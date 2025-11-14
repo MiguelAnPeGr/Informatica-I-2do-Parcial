@@ -6,6 +6,8 @@ main()
     float CalMate;
     float CalIngles;
     float CalFrans;
+    float CalEtica;
+    float CalInfo;
 
     printf("Ingresa tu calificacion en Matematicas:\n");
     scanf("%f",&CalMate);
@@ -13,8 +15,12 @@ main()
     scanf("%f",&CalIngles);
     printf("Ingresa tu calificacion en Frances:\n");
     scanf("%f",&CalFrans);
+    printf("Ingresa tu calificacion en Etica:\n");
+    scanf("%f",&CalEtica);
+    printf("Ingresa tu calificacion en Informatica:\n");
+    scanf("%f",&CalInfo);
 
-    Promedio=(CalMate+CalIngles+CalFrans)/3;
+    Promedio=(CalMate+CalIngles+CalFrans+CalEtica+CalInfo)/5;
 
     if(Promedio<6)
     {
