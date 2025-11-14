@@ -4,10 +4,19 @@ main(){
 float M;
 float R;
 
-printf("Ingresa los metros cuadrados de tu terreno");
+printf("Ingresa los metros cuadrados de tu terreno\n");
 scanf("%f",&M);
 
-R=M*1500;
+if(M<=500){
 
-printf("El costpo de tu terreno es de: %f", R);
+    R=M*750;
+
+    printf("El costo de tu terreno es %f", R);
+
+    }if(M>500){
+
+    R=(M*750)-((M*750)/10);
+printf("El costo de tu terreno es de: %f", R);
+
+}
 }
